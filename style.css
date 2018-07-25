@@ -1,3 +1,21 @@
+/*body {
+  font-size: 20px;
+  color: black;
+  background-color:#ffffff;
+  border: #dddddd;
+}*/
+
+
+/*.flex-container {
+  display: flex;
+  background-color:#4aaaa5;
+  flex-wrap: wrap;
+}*/
+
+/*p {
+  display: flex;
+}*/
+
 nav {
   /* I need to be flexed. */
   display: flex;
@@ -6,54 +24,88 @@ nav {
   /* I need to justify my children so the logo is on the left and the links are on the right. */
   justify-content: space-between;
   height: 100px;
+  width: 100%;
   overflow: hidden;
-  background-color:#ebebeb;
+  border-bottom: 2px solid #e7e7e7;
+  background-color: #cccccc;
 }
 
 .name {
-  padding-left: 100px;
-  color:black;
+  display: block;
+  font-weight: bold;
+  font-size: 24px; 
+  text-align: left;
+  padding: 50px;
+  margin: 100px;
+  color:#4aaaa5;
   font-size: 24px;
+  background-color:#4aaaa5;
+}
+
+.name:last-child {
+  border-right: none;
 }
 
 .navigation {
   /* I need to be flexed. */
   display: flex;
+  display: inline;  
   /* I need to align my children vertically. */
-  align-items: center;
-  padding-right: 100px;  
+  margin: 100px;
+  color: #666;
+  text-align: right;
+
+}
+
+a {
+  display: block;
   color: white;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid #bbb;
 }
 
-body {
-  font-size: 20px;
+a:last-child {
+  border-right: none;
+}  
+
+a:link {
   color: black;
-  background-color:#ffffff;
-  border: #dddddd;
+  background-color: transparent;
+  text-decoration: none;
 }
-
-.flex-container {
-  display: flex;
-  background-color:#777;
-  flex-wrap: wrap;
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: black;
+  background-color: blue;
+  text-decoration: underline;
 }
 
 img {
+  display: flex;
   border-radius: 8px;
   padding: 20px;
   max-width: 150px; 
   height: auto;
+  border: 2px solid #e7e7e7;
 }
 
 article {
   padding: 100px;
-  color: #ebebeb;
+  color: white;
   background-color: #777;
-}
-
-p {
-  display: flex;
-  text-justify: auto;
+  border: 2px solid #e7e7e7;
 }
 
 footer {
@@ -62,23 +114,60 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+  border-top: 2px solid #e7e7e7;
 }
 
 h1 {
   font-family: 'Georgia', Times, Times New Roman, serif;
+  border-bottom: 2px solid #e7e7e7;
 }
 
-.wrapper {
+p {
+  text-align: justify;
+}
+
+.flex-container {
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  padding-right: 100px;
-  padding-left: 100px;
-
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
-header {
-  background-color: #cccccc;
-  border: #cccccc;
+.fa-linkedin,
+.fa-github,
+.fa-envelope {
+  background: #007bb5;
+}
+
+.fa {
+  display: inline-block;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+i {
+  display: inline;
+}
+
+#picture,
+#social,
+#para {
+  float: left;
+}
+
+#picture {
+  width: 70%;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+#social {
+  padding: 30px;
+  width: auto;
 }
